@@ -4,6 +4,7 @@ import {
   MenuIcon,
   PaperAirplaneIcon,
   PlusCircleIcon,
+  PlusSmIcon,
   SearchIcon,
   UserGroupIcon,
 } from "@heroicons/react/outline";
@@ -56,6 +57,13 @@ const Header = () => {
         {/* Icons last */}
         <div className=" flex items-center justify-end space-x-4">
           <HomeIcon onClick={() => router.push("/")} className="navBtn" />
+          {session ? (
+            <>
+              <PlusCircleIcon className="btn" onClick={() => setOpen(true)} />
+            </>
+          ) : (
+            <></>
+          )}
 
           <MenuIcon className="h-8  md:hidden cursor-pointer " />
 
