@@ -59,7 +59,16 @@ const Header = () => {
           <HomeIcon onClick={() => router.push("/")} className="navBtn" />
           {session ? (
             <>
-              <PlusCircleIcon className="btn" onClick={() => setOpen(true)} />
+              <PlusCircleIcon
+                className="btn md:hidden "
+                onClick={() => setOpen(true)}
+              />
+              <img
+                src={session?.user?.image}
+                alt="profile pic"
+                className="h-6 w-6 rounded-full cursor-pointer btn md:hidden "
+                onClick={signOut}
+              />
             </>
           ) : (
             <></>
