@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import faker from "faker";
+import faker from "@faker-js/faker";
 
 const Suggestions = () => {
   const [suggestions, setSuggestions] = useState([]);
