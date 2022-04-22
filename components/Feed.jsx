@@ -1,5 +1,4 @@
 import React from "react";
-import Head from "next/dist/shared/lib/head";
 import Stories from "@/components/Stories";
 import Posts from "@/components/Posts";
 import MiniProfile from "./MiniProfile";
