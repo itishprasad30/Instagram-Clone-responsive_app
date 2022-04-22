@@ -30,7 +30,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "components/Header.tsx", "components/Footer.jsx"  ],
+, "components/Header.jsx", "components/Footer.jsx", "pages/_app.jsx"  ],
   "exclude": [
     "node_modules"
   ]
